@@ -15,7 +15,7 @@ const uncss = require('gulp-uncss');
 
 // Отбаботка css
 const css = () => {
-    return src(path.css.src, {soursemaps: true})
+    return src(path.css.src, {soursemaps: true}) 
     .pipe(webpcss())
     .pipe(autoprefixer())
     .pipe(uncss({

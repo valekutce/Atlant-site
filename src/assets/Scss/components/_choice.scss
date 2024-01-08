@@ -1,0 +1,10 @@
+.choice {
+    padding: 35px 0px 65px;
+    background: rgba(33,148,255,.0509803922);
+}
+.choice__btn {
+    margin-top: -38px;
+    @media (max-width: 375px) {
+        margin-top: 8px;
+    }
+}

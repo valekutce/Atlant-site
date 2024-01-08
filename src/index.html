@@ -6,25 +6,368 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- slick slider CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="./css/style.min.css"> 
-    <title>Главная страница - Мир больших собак</title>
+    <link rel="stylesheet" href="./assets/libs/slick.css"> 
+    <link rel="stylesheet" href="./assets/libs/slick-theme.css"> 
+    <link rel="stylesheet" href="./assets/css/style.min.css"> 
+    <title>Главная страница - Мир больших собак</title>  
 </head>
 <body>
     <main class="main">
 
-        @@include('templates/header.html')
+        <!-- @@include('templates/header.html') -->
 
-        <section class="hero relative overlay-before">
-            <h1>Hello</h1>
-        </section>
+        <main class="main">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrap d-f a-i-center f-w-w j-c-sb">
+                        <div class="main-logo">
+                            <div class="main-logo__img"><img src="./assets/img/main-logo.svg" alt="main-logo"></div>
+                            <div class="main-logo__line"></div>
+                            <div class="main-logo__title">
+                                Расправь плечи в теплом доме 
+                            </div>
+                        </div>
+                        <div class="contacts-block">
+                            <div class="contacts-block__pfone"><a href="tel:+01234567890">+01234567890</a></div>
+                            <div class="contacts-block__link"><a href="#">Срочный вопрос</a></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="main-block">
+                        <div class="main-block__header mb-10">
+                            <div class="container-flex f-w-w j-c-sb a-i-bas">
+                                <div class="main-block__info"><span class="d-b"><img src="./assets/img/moon.svg" alt="icon"><img src="./assets/img/arrow.svg" alt="icon" class="ml-10 mr-10"><img src="./assets/img/sun.svg" alt="icon"></span><span class="d-b">В любое время дня и ночи</span></div>
+                                <div class="main-block__info"><span class="d-b"><img src="./assets/img/cloudy.svg" alt="icon"><img src="./assets/img/arrow.svg" alt="icon" class="ml-10 mr-10"><img src="./assets/img/snowflake.svg" alt="icon"></span><span class="d-b">Вне зависимости от погодных условий</span></div>
+                            </div>
+                        </div>
+                        <div class="main-block__title mb-40"> 
+                            <h1 class="main-title mb-15">Доставим газ
+                                за 4 часа</h1>   
+                            <h3 class="sub-title">в любую точку  Москвы
+                                и Московской области</h3>
+                        </div>
+                        <div class="main-block__footer">
+                            <div class="mb-10">
+                                <a href="#" class="btn">Заказать доставку газа
+                                    в газгольдер</a>
+                            </div>
+                            <div>
+                                <p>Доставка газа всегда по актуальным ценам</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price relative">
+                <div class="container">
+                    <h2 class="title mb-50"></h2>
+                    <div class="price__wrap">
+                        <div class="container-flex f-w-w j-c-sb a-i-center">
+                            <div class="price__block">
+                                <div class="price__header mb-20">
+                                    <h3>Пропан</h3>
+                                    <h4>от 25 рублей за литр</h4>
+                                </div>
+                                <div class="price__caption mb-35">
+                                    <p>Физически испарение происходит до -40 градусов, что позволяет использовать его в наших с вами погодных условиях</p>
+                                </div>
+                                <div class="text-center"><a href="#" class="btn-sm">Заказать</a></div>
+                            </div>
+                            <div class="price__block price__block_center">
+                                <div class="price__header mb-20">
+                                    <h3>Идеальное соотношение</h3>
+                                    <div class="container-flex f-w-w j-c-sb a-i-center">
+                                        <div><span>80%</span><span>пропана</span></div>
+                                        <div class="line"></div>
+                                        <div><span>20%</span><span>бутана</span></div>
+                                    </div>
+                                </div>
+                                <div class="price__caption"><img src="./assets/img/price.png" alt="foto"></div>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__header mb-20">
+                                    <h3>Бутан</h3>
+                                    <h4>от 16 рублей за литр</h4>
+                                </div>
+                                <div class="price__caption mb-35">
+                                    <p>Испарение Бутана происходит только до 0 градусов и годится для использования в тёплое время года</p>
+                                </div>
+                                <div class="text-center"><a href="#" class="btn-sm">Заказать</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#Advantages" class="scroll-bottom"><img src="./assets/img/scroll.svg" alt="icon"></a>
+            </section>
+
+            <section id="Advantages" class="advantages relative">
+                <div class="container">
+                    <h2 class="title mb-25">Преимущества работы с нашей компанией</h2>
+                    <div class="advantages__wrap mb-40">
+                        <div class="container-flex f-w-w j-c-sb a-i-center ch-b-30-768 ch-b-50-568 adaptive">
+                            <div class="advantages__block">
+                                <img src="./assets/img/1.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Экономия <br>
+                                    на хранилище </h4>
+                                <p>за счёт собственных цистерн<br>
+                                    на нашей базе</p> 
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/2.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Экономия<br>
+                                    на транспорте</h4>
+                                <p>более 10 собственный газовозов</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/3.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Поставки напрямую<br>
+                                    от производителей</h4>
+                                <p>нет наценки на стоимость газа как у<br> перекупщиков и небольших частных компаний</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/4.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Любые объёмы поставки<br> качественного газа</h4>
+                                <p>вы получаете объем от 1 тонны до 20 <br>тонн, с сертификатом качества газа</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/5.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Оплата удобным<br>
+                                    для вас способом</h4>
+                                <p>все газовозы оснащены терминалами для<br> оплаты вашего заказа</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/6.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Чистый газ<br>
+                                    без примесей</h4>
+                                <p>нет наценки на стоимость газа как у<br> перекупщиков и небольших частных <br>компаний</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/7.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Длина заправочных<br>
+                                    рукавов — 50 метров</h4> 
+                                <p>не требуется подъезд автомобиля<br> вплотную к резервуару</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/8.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Доставка сжиженного газа<br>
+                                    в формате 24/7</h4>
+                                <p>привезем газ в удобное для вас время<br> или же  по графику</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img src="./assets/img/9.png" alt="icon" class="mb-10">
+                                <h4 class="mb-15">Аттестованный<br>
+                                    персонал</h4>
+                                <p>квалифицированные сотрудники<br> проведут полную консультацию и дадут <br>рекомендации, если такие нужны будут</p> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="guarantee d-f j-c-e">
+                        <div class="guarantee__block w-50-667 w-100">
+                            <h2 class="title text-left mb-20">Благодаря нашему собственному автопарку мы можем
+                                давать гарантию, что доставим <span>за 4 часа</span></h2>
+                            
+                            <p>Это сильное конкурентное преимущество, которым мы дорожим</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="choice">
+                <div class="container">
+                    <h2 class="title mb-35">Выберите свой объём Газовоза</h2>
+                    <div class="tabs w-65-768 m-auto">
+                        <div class="tabs__body d-f f-w-w j-c-sb">
+                            <a href="#" class="tab active">Малый <br> 
+                                2000 л.</a>
+                            <a href="#" class="tab">Средний
+                                6000 л.</a>
+                            <a href="#" class="tab">Стандартный
+                                10 000 л.</a>
+                            <a href="#" class="tab">Оптовый<br>
+                                40 000 л.</a>
+                        </div>
+                        <div class="tab__content mt-40"><img src="./assets/img/tab-1.png" alt="foto"></div>
+                        <div class="tab__content d-n"><img src="./assets/img/tab-2.png" alt="foto"></div>
+                        <div class="tab__content d-n"><img src="./assets/img/tab-3.png" alt="foto"></div>
+                        <div class="tab__content d-n"><img src="./assets/img/tab-4.png" alt="foto"></div>
+                    </div>
+                    <div class="choice__btn text-center"><a href="#" class="btn">Заказать газ</a></div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="title mb-50">Отзывы наших клиентов</h2> 
+                    <div class="reviews__wrap reviews__slider">
+                        <div class="reviews__block">
+                            <div class="reviews__wrapper d-f j-c-sb a-i-center">
+                                <div class="reviews__column"><img src="./assets/img/slider-1.jpg" alt="foto"></div>
+                                <div class="reviews__column">
+                                    <h4>Ольга И.</h4>
+                                    <h5>Красногорск</h5>
+                                    <p>Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.  Спасибо  компании за то что они все закрыли  этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__block">
+                            <div class="reviews__wrapper d-f j-c-sb a-i-center">
+                                <div class="reviews__column"><img src="./assets/img/slider-1.jpg" alt="foto"></div>
+                                <div class="reviews__column">
+                                    <h4>Ольга И.</h4>
+                                    <h5>Красногорск</h5>
+                                    <p>Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.  Спасибо  компании за то что они все закрыли  этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__block">
+                            <div class="reviews__wrapper d-f j-c-sb a-i-center">
+                                <div class="reviews__column"><img src="./assets/img/slider-1.jpg" alt="foto"></div>
+                                <div class="reviews__column">
+                                    <h4>Ольга И.</h4>
+                                    <h5>Красногорск</h5>
+                                    <p>Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.  Спасибо  компании за то что они все закрыли  этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__block">
+                            <div class="reviews__wrapper d-f j-c-sb a-i-center">
+                                <div class="reviews__column"><img src="./assets/img/slider-1.jpg" alt="foto"></div>
+                                <div class="reviews__column">
+                                    <h4>Ольга И.</h4>
+                                    <h5>Красногорск</h5>
+                                    <p>Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.  Спасибо  компании за то что они все закрыли  этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <h2 class="title mb-30">Ответы на часто задаваемые вопросы</h2>
+
+                    <div class="accordion">
+                        <div class="accordion__header active"> 
+                            <span> <i class="fa fa-long-arrow-down" aria-hidden="true"></i> </span>
+                            <span>Есть ли у вас инженеры в компании?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Безопасную толку, всеми грустный снова она они моей, текстами живет собрал повстречался возвращайся вопрос вопроса текстов себя рекламных это семь языкового встретил, деревни приставка! Составитель речью алфавит но все себя!</p>
+                        </div>
+                        <div class="accordion__header">
+                            <span><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                            <span>Делаете ли вы отчистку газгольдера?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Скатился вопроса имени журчит ручеек встретил она! Своих, взобравшись! Силуэт все несколько рекламных за океана агентство выйти дороге языком?</p>
+                        </div>
+                        <div class="accordion__header">
+                            <span><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                            <span>А вы не испортите газон у меня и соседей?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. До, собрал? Проектах даль одна щеке ручеек города строчка текстами единственное страна собрал буквоград буквенных реторический путь его даже, страну коварных от всех это? Он, пор, маленькая, парадигматическая о своего lorem подзаголовок ручеек ему диких скатился языком текстами возвращайся напоивший рекламных? За они рыбными журчит возвращайся?</p>
+                        </div>
+                        <div class="accordion__header">
+                            <span><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                            <span>Вы предоставляете документы для субсидий?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Семь диких за безорфографичный рыбного рыбными предупредила деревни что страна.</p>
+                        </div>
+                        <div class="accordion__header">
+                            <span><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                            <span>Смогу ли я заказать во время праздников?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный, на берегу выйти повстречался о дороге букв инициал имеет вскоре? Над, залетают оксмокс бросил грустный себя текстами пор переулка снова.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <div class="container">
+                    <div class="container-flex f-w-w ch-b-50-40-667 row-gap-30 mb-60 adaptive"> 
+                        <div class="column">
+                            <h2 class="title text-left mb-50">Не нашли ответа на свой вопрос задайте их нашему специалисту </h2>
+                            <div class="question__form">
+                                <form action="#" class="main-form">
+                                    <div><input type="text" placeholder="имя"></div>
+                                    <div><input type="tel" placeholder="Телефон"></div>
+                                    <div><textarea name="" placeholder="ваш вопрос"></textarea></div>
+                                    <div><button class="btn-sm">Задать вопрос </button></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="manager-block relative">
+                                <img src="./assets/img/manager.png" alt="foto">
+                                <div class="manager-block__title">
+                                    <h5>Роман Ш.</h5>
+                                    <p>Старший менеджер</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advertising mb-35">
+                        <div class="container-flex f-w-w j-c-sb row-gap-10">
+                            <div class="advertising__block"><img src="./assets/img/logo-1.png" alt="logo"></div>
+                            <div class="advertising__block"><img src="./assets/img/logo-2.png" alt="logo"></div>
+                            <div class="advertising__block"><img src="./assets/img/logo-3.png" alt="logo"></div>
+                            <div class="advertising__block"><img src="./assets/img/logo-4.png" alt="logo"></div>
+                            <div class="advertising__block"><img src="./assets/img/logo-5.png" alt="logo"></div>
+                            <div class="advertising__block"><img src="./assets/img/logo-6.png" alt="logo"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="title w-70-768 m-auto">Закажи прямо сейчас и получи
+                            бесплатную установку телеметрии</h2>
+                        <p class="text-center mt-10"><a href="#" class="btn">Заказать газ</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__blocks">
+                        <div class="container-flex f-w-w ch-b-50 adaptive">
+                            <div class="contacts__block">
+                                <div class="contacts__header mb-50">
+                                    <h2 class="title text-left w-80-768 mb-15">Посетите наш уютный офис</h2>
+                                    <p>где мы сможем вас полностью 
+                                        проконсультировать по всем  вопросам</p>
+                                </div>
+                                <div class="contacts__content">
+                                    <div><span>Офис</span><span>Видное , Белокаменное шоссе, 20</span></div>
+                                    <div><span>Телефон:</span><a href="tel:+01234567890">+01234567890</a></div>
+                                </div>
+                            </div>
+                            <div class="contacts__block"></div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
 
     </main>
 
 
     <!-- jQuery and Js -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/libs/slick.min.js"></script>
     <script src="https://use.fontawesome.com/ebd19701ea.js"></script> 
-    <script src="./js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

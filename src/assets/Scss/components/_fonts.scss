@@ -1,11 +1,61 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Russo+One&display=swap');  
+
 @font-face {
-  font-family: 'MV Boli';
-  src: url('../fonts/MVBoli.eot');
-  src: url('../fonts/MVBoli.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/MVBoli.woff2') format('woff2'),
-      url('../fonts/MVBoli.woff') format('woff'),
-      url('../fonts/MVBoli.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
+    font-family: 'Russo One';
+    src: local("RussoOne-Regular.ttf"),
+      local("../fonts/RussoOne-Regular.ttf"),
+      url("../fonts/RussoOne-Regular.ttf") format("woff2"),
+      url("../fonts/RussoOne-Regular.woff") format("woff"),
+      url("../fonts/RussoOne-Regular.eot") format("svg");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local("OpenSans-Regular.ttf"),
+      local("../fonts/OpenSans-Regular.ttf"),
+      url("../fonts/OpenSans-Regular.ttf") format("woff2"),
+      url("../fonts/OpenSans-Regular.woff") format("woff"),
+      url("../fonts/OpenSans-Regular.eot") format("svg");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local("OpenSans-Light.ttf"),
+      local("../fonts/OpenSans-Light.ttf"),
+      url("../fonts/OpenSans-Light.ttf") format("woff2"),
+      url("../fonts/OpenSans-Light.woff") format("woff"),
+      url("../fonts/OpenSans-Light.eot") format("svg");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local("OpenSans-SemiBold.ttf"),
+      local("../fonts/OpenSans-SemiBold.ttf"),
+      url("../fonts/OpenSans-SemiBold.ttf") format("woff2"),
+      url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+      url("../fonts/OpenSans-SemiBold.eot") format("svg");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local("OpenSans-Bold.ttf"),
+      local("../fonts/OpenSans-Bold.ttf"),
+      url("../fonts/OpenSans-Bold.ttf") format("woff2"),
+      url("../fonts/OpenSans-Bold.woff") format("woff"),
+      url("../fonts/OpenSans-Bold.eot") format("svg");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local("OpenSans-ExtraBold.ttf"),
+      local("../fonts/OpenSans-ExtraBold.ttf"),
+      url("../fonts/OpenSans-ExtraBold.ttf") format("woff2"),
+      url("../fonts/OpenSans-ExtraBold.woff") format("woff"),
+      url("../fonts/OpenSans-ExtraBold.eot") format("svg");
+    font-weight: 800;
+  }

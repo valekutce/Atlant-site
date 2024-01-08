@@ -1,0 +1,110 @@
+.reviews {
+    width: 100%;
+    padding: 40px 0px 58px;
+    .title {
+        color: var(--main-text-color);
+    }
+}
+
+.reviews__wrap {
+    position: relative;
+    width: 760px;
+    max-width: 100%;
+    margin: auto;
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        background: #F1F1F1;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+    &::before {
+        min-width: 799px; 
+        width: 100%;
+        height: 286px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &::after {
+        min-width: 839px;
+        width: 100%;
+        height: 252px;
+        z-index: -1;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+.reviews__block {
+    padding: 47px 57px;
+    border-radius: 40px;
+    background: #F1F1F1;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    @media (max-width: 375px) {
+        padding: 20px;
+    }
+}
+.reviews__column {
+    &:first-child {
+        width: 210px;
+        height: 241px;
+        border-radius: 40px;
+        @media (max-width: 425px) { 
+            width: 252px;
+            max-width: 100%;
+            height: 302px;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: 50% 50%;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+    }
+    &:last-child {
+        width: 420px;
+        max-width: 100%;
+        h4 {
+            color: var(--title-color);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h5 {
+            color: #2D2D2D;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #2D2D2D;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        @media (max-width: 768px) {
+            width: 380px;
+        }
+        @media (max-width: 667px) {
+            width: 273px;
+        }
+    }
+}
+
+.reviews__wrapper {
+    @media (max-width: 425px) {
+        flex-direction: column; 
+    }
+}
